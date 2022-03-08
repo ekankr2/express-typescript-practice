@@ -1,0 +1,38 @@
+{
+  "name": "express-typescript-starter",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Express TypeScript Starter",
+  "scripts": {
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=production node build/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "lint": "eslint --ext .ts,.js . --ignore-path .gitignore .",
+    "prod": "yarn build && yarn start"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/helmet": "^0.0.45",
+    "@types/node": "^13.13.9",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "nodemon": "^2.0.4",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "@sentry/node": "^5.15.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.2"
+  }
+}
