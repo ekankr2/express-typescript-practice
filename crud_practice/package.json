@@ -1,8 +1,8 @@
 {
-   "name": "jaebook-server",
+   "name": "node_crud_practice",
    "version": "0.0.1",
    "license": "MIT",
-   "description": "JaeBook API Server",
+   "description": "Node CRUD Practice",
    "scripts": {
       "build": "tsc",
       "start": "cross-env NODE_ENV=production node build/server.js",

@@ -33,8 +33,8 @@ export function useSwagger(app: express.Application) {
       },
     },
     info: {
-      title: "JaeBook Server",
-      description: "JaeBook API",
+      title: "CRUD Practice",
+      description: "Practicing Node",
       version: "1.0.0",
     },
   });
