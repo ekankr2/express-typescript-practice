@@ -18,7 +18,7 @@ export class Post {
   @PrimaryGeneratedColumn("uuid")
   id: string;
 
-  @Column({ name: "user_id", length: 36 })
+  @Column({ name: "user_id" })
   userId: string;
 
   @ManyToOne((type) => User, (user) => user.id, {
@@ -36,7 +36,7 @@ export class Post {
   @Column({ type: "text" })
   content: string;
 
-  @Column({ name: "preview_content", length: 100 })
+  @Column({ name: "preview_content" })
   previewContent: string;
 
   @Column({ default: 0 })

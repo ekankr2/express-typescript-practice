@@ -17,11 +17,11 @@ export class User {
   id: string;
 
   @IsNotEmpty()
-  @Column({ name: "real_name", length: 50 })
+  @Column({ name: "real_name" })
   realName: string;
 
   @IsNotEmpty()
-  @Column({ length: 100 })
+  @Column({ precision: 100 })
   email: string;
 
   @IsNotEmpty()

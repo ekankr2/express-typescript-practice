@@ -17,10 +17,10 @@ export class PostLike {
   @PrimaryGeneratedColumn("uuid")
   id: string;
 
-  @Column({ name: "post_id", length: 36 })
+  @Column({ name: "post_id" })
   postId: string;
 
-  @Column({ name: "user_id", length: 36 })
+  @Column({ name: "user_id" })
   userId: string;
 
   @ManyToOne((type) => Post, (post) => post.id, {

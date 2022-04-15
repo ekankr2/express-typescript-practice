@@ -8,7 +8,7 @@ import { env } from "./env";
 export async function createDatabaseConnection(): Promise<void> {
   try {
     const connectionOpts: ConnectionOptions = {
-      type: "mysql",
+      type: "postgres",
       host: env.database.host,
       port: env.database.port,
       username: env.database.usename,
